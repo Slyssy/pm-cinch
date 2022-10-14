@@ -8,11 +8,11 @@
 
 [X] Expenses Table
 
-[] Tasks Table
+[X] Tasks Table
 
-[] Timesheets Table
+[X] Timesheets Table
 
-[] Comments Table
+[X] Comments Table
 
 ## Routes
 
