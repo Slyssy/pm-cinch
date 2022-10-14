@@ -2,11 +2,11 @@
 
 ## Tables
 
-[] Users Table
+[X] Users Table
 
-[] Projects Table
+[X] Projects Table
 
-[] Expenses Table
+[X] Expenses Table
 
 [] Tasks Table
 
