@@ -26,7 +26,7 @@ app.use(authRoutes);
 // app.use(projectRoutes);
 // app.use(taskRoutes);
 // app.use(timesheetRoutes);
-// app.use(userRoutes);
+app.use(userRoutes);
 
 app.listen(port, () => {
   console.log(`Application is running on port ${port}`);

@@ -42,13 +42,13 @@
 
 ## User Routes
 
-[] <span style="font-weight: 500;font-size: 16px">Get All Users</span> <span style="color:green; font-size: 16px">GET(/users)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All Users</span> <span style="color:green; font-size: 16px">GET(/users)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get a User by ID</span> <span style="color:green; font-size: 16px">GET(/user/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get a User by ID</span> <span style="color:green; font-size: 16px">GET(/user/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Update a User by ID</span> <span style="color:blue; font-size: 16px">PUT(/user/:id)
+[✓] <span style="font-weight: 500;font-size: 16px">Update a User by ID</span> <span style="color:blue; font-size: 16px">PUT(/user/:id)
 
-[] <span style="font-weight: 500;font-size: 16px">Delete a User by ID</span> <span style="color:red; font-size: 16px">DELETE(/user/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a User by ID</span> <span style="color:red; font-size: 16px">DELETE(/user/:id)</span>
 <br>
 <br>
 
