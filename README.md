@@ -2,17 +2,17 @@
 
 ## Tables
 
-[X] Users Table
+[✓] Users Table
 
-[X] Projects Table
+[✓] Projects Table
 
-[X] Expenses Table
+[✓] Expenses Table
 
-[X] Tasks Table
+[✓] Tasks Table
 
-[X] Timesheets Table
+[✓] Timesheets Table
 
-[X] Comments Table
+[✓] Comments Table
 
 ![erd diagram](https://raw.githubusercontent.com/Slyssy/pm-cinch/main/public/ERD.png)
 
@@ -20,7 +20,7 @@
 
 ### Authorization Routes
 
-[X] <Register style="font-weight: 500;font-size: 16px">Register Route <span style="color:purple; font-size: 16px">POST(/register)</span>
+[✓]] <Register style="font-weight: 500;font-size: 16px">Register Route <span style="color:purple; font-size: 16px">POST(/register)</span>
 
 - The request will include the first name, last name, position, email, phone,
   payRate, username, password and userID.
@@ -28,7 +28,7 @@
 - This route will post into the users table.
 - Include a conditional that will check for duplicates (no duplicates allowed).
 
-[X] <span style="font-weight: 500;font-size: 16px">Login Route <span style="color:purple; font-size: 16px">POST(/login)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Login Route <span style="color:purple; font-size: 16px">POST(/login)</span>
 
 - The request for this route will include the username and password.
 - Query the database and grab the id, first name, last name, email and the
