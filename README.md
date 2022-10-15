@@ -121,4 +121,4 @@
 <br>
 <br>
 
-![erd_diagram](/public/erd.png)
+![erd diagram](https://raw.githubusercontent.com/Slyssy/pm-cinch/main/public/ERD.png)
