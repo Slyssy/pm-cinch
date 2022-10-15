@@ -20,7 +20,7 @@
 
 ### Authorization Routes
 
-[✓]] <Register style="font-weight: 500;font-size: 16px">Register Route <span style="color:purple; font-size: 16px">POST(/register)</span>
+[✓] <Register style="font-weight: 500;font-size: 16px">Register Route <span style="color:purple; font-size: 16px">POST(/register)</span>
 
 - The request will include the first name, last name, position, email, phone,
   payRate, username, password and userID.
