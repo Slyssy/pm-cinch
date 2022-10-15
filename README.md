@@ -120,3 +120,4 @@
 [] <span style="font-weight: 500;font-size: 16px">Delete a Comment by ID </span><span style="color:red; font-size: 16px">DELETE(/comment/:id)</span>
 <br>
 <br>
+![erd_diagram](./public/erd.png)
