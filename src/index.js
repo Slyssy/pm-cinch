@@ -21,12 +21,12 @@ const userRoutes = require('./routes/usersRoutes');
 
 // * Using the route variable I created above.
 app.use(authRoutes);
-app.use(commentRoutes);
-app.use(expenseRoutes);
-app.use(projectRoutes);
-app.use(taskRoutes);
-app.use(timesheetRoutes);
-app.use(userRoutes);
+// app.use(commentRoutes);
+// app.use(expenseRoutes);
+// app.use(projectRoutes);
+// app.use(taskRoutes);
+// app.use(timesheetRoutes);
+// app.use(userRoutes);
 
 app.listen(port, () => {
   console.log(`Application is running on port ${port}`);
