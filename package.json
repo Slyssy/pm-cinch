@@ -1,0 +1,24 @@
+{
+  "name": "pm-cinch",
+  "version": "1.0.0",
+  "description": "## Tables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slyssy/pm-cinch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Slyssy/pm-cinch/issues"
+  },
+  "homepage": "https://github.com/Slyssy/pm-cinch#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
