@@ -8,16 +8,16 @@ const port = process.env.PORT || 8084;
 
 //* Middleware
 app.use(express.json());
-app.use(express.static('../public'));
+app.use(express.static('/public'));
 
 //* Importing Routers
-const authRoutes = require('./routes/authRoutes');
-const commentRoutes = require('./routes/commentsRoutes');
-const expenseRoutes = require('./routes/expenseRoutes');
-const projectRoutes = require('./routes/projectRoutes');
-const taskRoutes = require('./routes/taskRoutes');
-const timesheetRoutes = require('./routes/timesheetRoutes');
-const userRoutes = require('./routes/usersRoutes');
+const authRoutes = require('./src/routes/authRoutes');
+const commentRoutes = require('./src/routes/commentsRoutes');
+const expenseRoutes = require('./src/routes/expenseRoutes');
+const projectRoutes = require('./src/routes/projectRoutes');
+const taskRoutes = require('./src/routes/taskRoutes');
+const timesheetRoutes = require('./src/routes/timesheetRoutes');
+const userRoutes = require('./src/routes/usersRoutes');
 
 app.get('/', (req, res) => {
   res.send('Hello World');
