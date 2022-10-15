@@ -54,15 +54,15 @@
 
 ## Project Routes
 
-[] <span style="font-weight: 500;font-size: 16px">Create a New Project: </span><span style="color:purple; font-size: 16px">POST(/project)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Create a New Project: </span><span style="color:purple; font-size: 16px">POST(/project)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get All of the Projects </span><span style="color:green; font-size: 16px">GET(/projects)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Projects </span><span style="color:green; font-size: 16px">GET(/projects)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get a Project by ID </span><span style="color:green; font-size: 16px">GET(/project/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get a Project by ID </span><span style="color:green; font-size: 16px">GET(/project/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Update a Project by ID </span><span style="color:blue; font-size: 16px">PUT(/project/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Update a Project by ID </span><span style="color:blue; font-size: 16px">PUT(/project/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Delete a Project by ID </span><span style="color:red; font-size: 16px">DELETE(/project/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a Project by ID </span><span style="color:red; font-size: 16px">DELETE(/project/:id)</span>
 <br>
 <br>
 
