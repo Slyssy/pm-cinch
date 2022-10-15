@@ -19,6 +19,9 @@ const taskRoutes = require('./routes/taskRoutes');
 const timesheetRoutes = require('./routes/timesheetRoutes');
 const userRoutes = require('./routes/usersRoutes');
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 // * Using the route variable I created above.
 app.use(authRoutes);
 // app.use(commentRoutes);
