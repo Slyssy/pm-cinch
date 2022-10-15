@@ -14,6 +14,8 @@
 
 [X] Comments Table
 
+![erd diagram](https://raw.githubusercontent.com/Slyssy/pm-cinch/main/public/ERD.png)
+
 ## Routes
 
 ### Authorization Routes
@@ -120,5 +122,3 @@
 [] <span style="font-weight: 500;font-size: 16px">Delete a Comment by ID </span><span style="color:red; font-size: 16px">DELETE(/comment/:id)</span>
 <br>
 <br>
-
-![erd diagram](https://raw.githubusercontent.com/Slyssy/pm-cinch/main/public/ERD.png)
