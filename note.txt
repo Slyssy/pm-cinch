@@ -56,3 +56,21 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlNseXNzeSIsInVzZXJJRCI6MSw
 
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IktMZXJtYSIsInVzZXJJRCI6MiwiZmlyc3ROYW1lIjoiS3Jpc3RpbiIsImxhc3ROYW1lIjoiTGVybWEiLCJlbWFpbCI6ImtyaXN0aW4ubGVybWFAZ21haWwuY29tIiwiaWF0IjoxNjY1ODg1MDY3fQ.cShYiSiDHV-h7VcrJjOG1mKp8tEAf6KVflVYEXb2mck
 *************************************************************************
+
+{
+    "firstName": "Leah",
+    "lastName": "Marke",
+    "position": "Project Engineer",
+    "email": "leah.marke@gmail.com",
+    "phone": "407-529-9007",
+    "payRate": 58.55,
+    "username": "LMarke",
+    "password": "mYpassW0rd4"
+}
+
+{
+    "username": "LMarke",
+    "password": "mYpassW0rd4"
+}
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkxNYXJrZSIsInVzZXJJRCI6NCwiZmlyc3ROYW1lIjoiTGVhaCIsImxhc3ROYW1lIjoiTWFya2UiLCJlbWFpbCI6ImxlYWgubWFya2VAZ21haWwuY29tIiwiaWF0IjoxNjY1ODkyNzMyfQ.-CaoFCKynaVNYG3h-_DP07ydgzFGe_jsOmYzLZ5f-QU

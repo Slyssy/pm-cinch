@@ -75,9 +75,9 @@ Project</span><span style="color:green; font-size: 16px">GET(/expenses/:projectI
 
 [✓] <span style="font-weight: 500;font-size: 16px">Get an Expense by ID </span><span style="color:green; font-size: 16px">GET(/expense/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Update an Expense by ID </span><span style="color:blue; font-size: 16px">PUT(/expense/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Update an Expense by ID </span><span style="color:blue; font-size: 16px">PUT(/expense/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Delete an Expense by ID
+[✓] <span style="font-weight: 500;font-size: 16px">Delete an Expense by ID
 </span><span style="color:red; font-size: 16px">DELETE(/expense/:id)</span>
 <br>
 <br>
