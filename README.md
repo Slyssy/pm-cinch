@@ -68,11 +68,12 @@
 
 ## Expense Routes
 
-[] <span style="font-weight: 500;font-size: 16px">Create a New Expense: </span><span style="color:purple; font-size: 16px">POST(/expense)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Create a New Expense: </span><span style="color:purple; font-size: 16px">POST(/expense)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get All of the Expenses </span><span style="color:green; font-size: 16px">GET(/expenses)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Expenses for a
+Project</span><span style="color:green; font-size: 16px">GET(/expenses/:projectID)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get an Expense by ID </span><span style="color:green; font-size: 16px">GET(/expense/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get an Expense by ID </span><span style="color:green; font-size: 16px">GET(/expense/:id)</span>
 
 [] <span style="font-weight: 500;font-size: 16px">Update an Expense by ID </span><span style="color:blue; font-size: 16px">PUT(/expense/:id)</span>
 
