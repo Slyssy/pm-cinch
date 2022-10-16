@@ -42,15 +42,43 @@
 
 ## User Routes
 
-[✓] <span style="font-weight: 500;font-size: 16px">Get All Users</span> <span style="color:green; font-size: 16px">GET(/users)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All Users</span> <span
+style="color:green; font-size: 16px">GET(/users)</span>
 
-[✓] <span style="font-weight: 500;font-size: 16px">Get a User by ID</span> <span style="color:green; font-size: 16px">GET(/user/:id)</span>
+<!-- TODO: Need to figure out how to make it so only those users that are logged in can have access to all the users' information. -->
+
+- This is an unprotected route.
+
+- Queries the "users" table and returns the id, first name, last name, position
+  of all the users.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Get a User by ID</span> <span
+style="color:green; font-size: 16px">GET(/user/:id)</span>
+
+<!-- TODO: Need to make this route accessible to only users that are logged in, but I need any user with the "Authorization Level" to be able to search for a particular user. -->
+
+- This is an unprotected route.
+- This route queries the "users" table, and it returns the id, first name, last
+  name, position, email, phone, pay_rate, username and password hash for a
+  particular user.
 
 [✓] <span style="font-weight: 500;font-size: 16px">Update a User by ID</span> <span style="color:blue; font-size: 16px">PUT(/user/:id)
 
-[✓] <span style="font-weight: 500;font-size: 16px">Delete a User by ID</span> <span style="color:red; font-size: 16px">DELETE(/user/:id)</span>
-<br>
-<br>
+<!-- TODO: Need to make it so that only the logged in user can update their own route. -->
+
+- This route makes it possible to update any field in a user's record.
+- Once updated, this route returns an object of the updated user record.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a User by ID</span>
+<span style="color:red; font-size: 16px">DELETE(/user/:id)</span>
+
+<!-- TODO: Need to figure out how only admin level employees can delete user records. -->
+
+- This route deletes a record by a user ID.
+- This route will send back a status of ok and confirms the number of records
+  that have been deleted.
+  <br>
+  <br>
 
 ## Project Routes
 
