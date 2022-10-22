@@ -11,9 +11,6 @@ const {
   deleteExpense,
 } = require('../controllers/expenseControllers');
 
-//* Importing checkJWT middleware
-const { checkJWT } = require('../middleware/auth');
-
 router.get('/expenses/:projectID', getExpenses);
 
 router.get('/expense/:id', getExpenseByID);
