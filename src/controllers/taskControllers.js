@@ -1,10 +1,10 @@
 const db = require('../utils/db');
 
 // % Get All Tasks by project_id Controller --------------------------------------------------------------------------------
-// * Creating a getProjects controller function that will accept a request and a
-// *  response object. It will return all the projects with the fields defined
-// *   by the query.
-// # It will only show the projects associated with the user that is logged in.
+// * Creating a getTasks controller function that will accept a request and a
+// *  response object. It will return all the tasks for a particular project
+// *  with the fields defined. It will only show the projects associated with
+// *  the user that is logged in.
 const getTasks = (req, res) => {
   const projectID = req.params.projectID;
 
@@ -34,7 +34,7 @@ const getTasks = (req, res) => {
 // % Create Task Controller --------------------------------------------------------------------------------
 // * This function accepts a request and a response.
 
-// * The user id will be auto generated as per the mySQL schema.
+// * The task id will be auto generated as per the mySQL schema.
 
 // # We will be inserting the tokenUserID into the table by using the
 // # tokenUserID that is part of the request object.
@@ -86,10 +86,10 @@ const postTask = (req, res) => {
 
 // % Update Task By ID Controller --------------------------------------------------------------------------------
 // * This function will take the request and response objects and it will
-// * "update" a single project based on the path parameter submitted with the
+// * "update" a single task based on the path parameter submitted with the
 // * request.
 
-// # Only projects associated with the "user" that is logged in can be updated.
+// # Only tasks associated with the "user" that is logged in can be updated.
 
 // * If the id is not valid, the response will be "null", else the we will run
 // * the update query using parameterized SQL Statements.
@@ -107,7 +107,7 @@ const updateTask = (req, res) => {
       console.log(`The updateTask route was not successful: ${err}`);
       res.sendStatus(500);
     } else {
-      // * Running another query that makes use of the expense ID to show the
+      // * Running another query that makes use of the task ID to show the
       // *  updated response object.
       const resSqlQuery = `select id, user_id, project_id, task_title, task_description, task_status, task_start, task_end from tasks where id = ?`;
       // # Saving params array as a variable.
@@ -142,7 +142,7 @@ const updateTask = (req, res) => {
 };
 
 // % Delete Task By ID Controller --------------------------------------------------------------------------------
-// * This function will delete a user based on the client's request.
+// * This function will delete a task based on the client's request.
 
 // * We will use the path parameter to confirm the user that needs to be
 // * deleted.

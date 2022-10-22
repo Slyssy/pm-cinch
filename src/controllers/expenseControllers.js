@@ -1,9 +1,9 @@
 const db = require('../utils/db');
 
 // % Get All Expenses by project_id Controller --------------------------------------------------------------------------------
-// * Creating a getProjects controller function that will accept a request and a
-// *  response object. It will return all the projects with the fields defined
-// *   by the query.
+// * Creating a getExpenses controller function that will accept a request and a
+// *  response object. It will return all the expenses associated with a project
+// *   with the fields defined by the query.
 // # It will only show the projects associated with the user that is logged in.
 const getExpenses = (req, res) => {
   const projectID = req.params.projectID;
@@ -33,11 +33,11 @@ const getExpenses = (req, res) => {
 
 // % Get Expense By ID Controller --------------------------------------------------------------------------------
 // * This function will take the request and response object and it will return
-// *  a project based on the id that provided by a path parameter submitted
+// *  a expense based on the id that provided by a path parameter submitted
 // *  with the request.
 
 // * If the id is not valid, the response will be "null", else the entire
-// * project will be returned in the response.
+// * expense will be returned in the response.
 const getExpenseByID = (req, res) => {
   const expenseID = req.params.id;
 
@@ -74,7 +74,7 @@ const getExpenseByID = (req, res) => {
 // % Create Expense Controller --------------------------------------------------------------------------------
 // * This function accepts a request and a response.
 
-// * The user id will be auto generated as per the mySQL schema.
+// * The expense id will be auto generated as per the mySQL schema.
 
 // # We will be inserting the tokenUserID into the table by using the
 // # tokenUserID that is part of the request object.
@@ -123,10 +123,10 @@ const postExpense = (req, res) => {
 
 // % Update Expense By ID Controller --------------------------------------------------------------------------------
 // * This function will take the request and response objects and it will
-// * "update" a single project based on the path parameter submitted with the
+// * "update" a single expense based on the path parameter submitted with the
 // * request.
 
-// # Only projects associated with the "user" that is logged in can be updated.
+// # Only expenses associated with the "user" that is logged in can be updated.
 
 // * If the id is not valid, the response will be "null", else the we will run
 // * the update query using parameterized SQL Statements.
@@ -181,7 +181,7 @@ const updateExpense = (req, res) => {
 // % Delete Expense By ID Controller --------------------------------------------------------------------------------
 // * This function will delete a user based on the client's request.
 
-// * We will use the path parameter to confirm the user that needs to be
+// * We will use the path parameter to confirm the expense that needs to be
 // * deleted.
 
 // # Only records associated with the "user" that is logged in can be deleted.
