@@ -24,7 +24,7 @@ app.use(authRoutes);
 // app.use(commentRoutes);
 app.use(expenseRoutes);
 app.use(projectRoutes);
-// app.use(taskRoutes);
+app.use(taskRoutes);
 // app.use(timesheetRoutes);
 app.use(userRoutes);
 

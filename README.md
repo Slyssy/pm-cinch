@@ -112,15 +112,13 @@ Project</span><span style="color:green; font-size: 16px">GET(/expenses/:projectI
 
 ## Task Routes
 
-[] <span style="font-weight: 500;font-size: 16px">Create a New Task: </span><span style="color:purple; font-size: 16px">POST(/task)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Create a New Task: </span><span style="color:purple; font-size: 16px">POST(/task)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get All of the Tasks </span><span style="color:green; font-size: 16px">GET(/tasks)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Tasks for a Project</span><span style="color:green; font-size: 16px">GET(/tasks/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Get a Task by ID </span><span style="color:green; font-size: 16px">GET(/task/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Update a Task by ID </span><span style="color:blue; font-size: 16px">PUT(/task/:id)</span>
 
-[] <span style="font-weight: 500;font-size: 16px">Update a Task by ID </span><span style="color:blue; font-size: 16px">PUT(/task/:id)</span>
-
-[] <span style="font-weight: 500;font-size: 16px">Delete a Task by ID </span><span style="color:red; font-size: 16px">DELETE(/task/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a Task by ID </span><span style="color:red; font-size: 16px">DELETE(/task/:id)</span>
 <br>
 <br>
 
