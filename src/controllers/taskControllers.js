@@ -13,6 +13,11 @@ const getTasks = (req, res) => {
     return;
   }
 
+  //* Setting token for user_id to a variable.
+  // let tokenUserID = req.userInfo.userID;
+
+  // console.log(tokenUserID);
+
   const sql = `SELECT tasks.id, tasks.user_id, project_id, task_title, task_description, task_status, task_start, task_end FROM tasks JOIN projects ON tasks.project_id = projects.id WHERE tasks.project_id = ?;`;
 
   const params = [projectID];

@@ -84,46 +84,120 @@ style="color:green; font-size: 16px">GET(/user/:id)</span>
 
 [✓] <span style="font-weight: 500;font-size: 16px">Create a New Project: </span><span style="color:purple; font-size: 16px">POST(/project)</span>
 
-- This is a protected route.
--
+- This route is used to create new projects.
+- We will use the token to add the user that is currently logged in to the
+  "user_id" field of the projects table.
+- The token is generated after the successfully execute the login route.
+- If a user is not logged in, then a project cannot be created.
 
-[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Projects </span><span style="color:green; font-size: 16px">GET(/projects)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Projects
+</span><span style="color:green; font-size: 16px">GET(/projects)</span>
 
-[✓] <span style="font-weight: 500;font-size: 16px">Get a Project by ID </span><span style="color:green; font-size: 16px">GET(/project/:id)</span>
+- This route is protected with JSON web token.
+- User will need to have the correct token to GET projects associated to them.
+- The token is generated after the successfully execute the login route.
+- Their user id is captured from the signed JSON web token.
 
-[✓] <span style="font-weight: 500;font-size: 16px">Update a Project by ID </span><span style="color:blue; font-size: 16px">PUT(/project/:id)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Get a Project by ID
+</span><span style="color:green; font-size: 16px">GET(/project/:id)</span>
 
-[✓] <span style="font-weight: 500;font-size: 16px">Delete a Project by ID </span><span style="color:red; font-size: 16px">DELETE(/project/:id)</span>
-<br>
-<br>
+- This route is protected using JSON web token.
+- Once a user is logged in, they can only GET projects that contain their user
+  id.
+- Their user id is captured from the signed JSON web token.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Update a Project by ID
+</span><span style="color:blue; font-size: 16px">PUT(/project/:id)</span>
+
+- This route is protected using JSON web token.
+- Once a user is logged in, they can only UPDATE projects that contain their user
+  id.
+- Their user id is captured from the signed JSON web token.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a Project by ID
+</span><span style="color:red; font-size: 16px">DELETE(/project/:id)</span>
+
+- This route is protected using JSON web token.
+- Once a user is logged in, they can only DELETE projects that contain their user
+  id.
+- Their user id is captured from the signed JSON web token.
+  <br>
+  <br>
 
 ## Expense Routes
 
 [✓] <span style="font-weight: 500;font-size: 16px">Create a New Expense: </span><span style="color:purple; font-size: 16px">POST(/expense)</span>
 
+- We use this route to create new expenses.
+- The expenses are entered via the req.body.
+- Currently, the expense table includes the project id, expense date, expense
+  type, vendor name and expense amount.
+
 [✓] <span style="font-weight: 500;font-size: 16px">Get All of the Expenses for a
 Project</span><span style="color:green; font-size: 16px">GET(/expenses/:projectID)</span>
 
+- This route will GET all the expenses from the expense table that are
+  associated with this project.
+
+- This is done by joining the projects table and the expense table.
+
+- The route parameter for this route is the project ID
+
 [✓] <span style="font-weight: 500;font-size: 16px">Get an Expense by ID </span><span style="color:green; font-size: 16px">GET(/expense/:id)</span>
+
+- This route will GET a single expense by its unique id.
+- The expense id is the route parameter.
 
 [✓] <span style="font-weight: 500;font-size: 16px">Update an Expense by ID </span><span style="color:blue; font-size: 16px">PUT(/expense/:id)</span>
 
+- This route is used to UPDATE any of the fields in the expenses table for an
+  expense selected by the expense id.
+- The expense id is entered as a route parameter.
+
 [✓] <span style="font-weight: 500;font-size: 16px">Delete an Expense by ID
 </span><span style="color:red; font-size: 16px">DELETE(/expense/:id)</span>
-<br>
-<br>
+
+- This route is used to DELETE a single expense by the expense id.
+- The expense id is entered as a route parameter.
+  <br>
+  <br>
 
 ## Task Routes
 
-[✓] <span style="font-weight: 500;font-size: 16px">Create a New Task: </span><span style="color:purple; font-size: 16px">POST(/task)</span>
+[✓] <span style="font-weight: 500;font-size: 16px">Create a New Task:
+</span><span style="color:purple; font-size: 16px">POST(/task)</span>
 
-[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Tasks for a Project</span><span style="color:green; font-size: 16px">GET(/tasks/:id)</span>
+- We use this route to create new task.
+- The tasks are entered via the req.body.
+- Currently, the tasks table includes the user id, project id, task title, task
+  description, task status, task start date, task end date and column to
+  indicate if the task is complete.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Get All of the Tasks for a
+Project</span><span style="color:green; font-size:
+16px">GET(/tasks/:project_id)</span>
+
+- This route will GET all the tasks from the tasks table that are
+  associated with a project.
+
+- This is done by joining the projects table and the tasks table.
+
+- The route parameter for this route is the project ID
 
 [✓] <span style="font-weight: 500;font-size: 16px">Update a Task by ID </span><span style="color:blue; font-size: 16px">PUT(/task/:id)</span>
 
-[✓] <span style="font-weight: 500;font-size: 16px">Delete a Task by ID </span><span style="color:red; font-size: 16px">DELETE(/task/:id)</span>
-<br>
-<br>
+- This route is used to UPDATE any of the fields in the tasks table for an
+  task selected by the task id.
+- The task id is entered as a route parameter.
+
+[✓] <span style="font-weight: 500;font-size: 16px">Delete a Task by ID
+</span><span style="color:red; font-size: 16px">DELETE(/task/:id)</span>
+
+- This route is used to DELETE any of the fields in the tasks table for an
+  task selected by the task id.
+- The task id is entered as a route parameter.
+  <br>
+  <br>
 
 ## Time Sheet Routes
 

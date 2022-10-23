@@ -76,9 +76,6 @@ const getExpenseByID = (req, res) => {
 
 // * The expense id will be auto generated as per the mySQL schema.
 
-// # We will be inserting the tokenUserID into the table by using the
-// # tokenUserID that is part of the request object.
-
 // * Once the item is created we want to send a response that shows the new
 // * object.
 const postExpense = (req, res) => {
@@ -179,7 +176,7 @@ const updateExpense = (req, res) => {
 };
 
 // % Delete Expense By ID Controller --------------------------------------------------------------------------------
-// * This function will delete a user based on the client's request.
+// * This function will delete an Expense based on the client's request.
 
 // * We will use the path parameter to confirm the expense that needs to be
 // * deleted.
